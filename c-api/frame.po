@@ -19,81 +19,87 @@ msgstr ""
 
 #: ../../c-api/frame.rst:4
 msgid "Frame Objects"
-msgstr ""
+msgstr "Frame 物件"
 
 #: ../../c-api/frame.rst:8
 msgid "The C structure of the objects used to describe frame objects."
-msgstr ""
+msgstr "用來描述 frame 物件的 C 語言結構"
 
 #: ../../c-api/frame.rst:10
 msgid "There are no public members in this structure."
-msgstr ""
+msgstr "這個結構中沒有 public 成員"
 
 #: ../../c-api/frame.rst:12
 msgid ""
 "The members of this structure were removed from the public C API. Refer to "
 "the :ref:`What's New entry <pyframeobject-3.11-hiding>` for details."
 msgstr ""
+"這個結構中的成員已經被從公開的 C API 中移除。詳細請參照 :ref:`What's New "
+"entry <pyframeobject-3.11-hiding>`"
 
 #: ../../c-api/frame.rst:17
 msgid ""
-"The :c:func:`PyEval_GetFrame` and :c:func:`PyThreadState_GetFrame` functions "
-"can be used to get a frame object."
+"可以使用 C 函式 :c:func:`PyEval_GetFrame` and :c:func:"
+"`PyThreadState_GetFrame` 來取得 frame 物件。"
 msgstr ""
 
 #: ../../c-api/frame.rst:20
 msgid "See also :ref:`Reflection <reflection>`."
-msgstr ""
+msgstr "同時參照 :ref:`Reflection <reflection>`。"
 
 #: ../../c-api/frame.rst:24
 msgid ""
 "The type of frame objects. It is the same object as :py:class:`types."
 "FrameType` in the Python layer."
 msgstr ""
+"這個 frame 物件的型別與 python 中的 :py:class:`types.FrameType` 是同一個物"
+"件。"
 
 #: ../../c-api/frame.rst:29
 msgid ""
 "Previously, this type was only available after including ``<frameobject.h>``."
-msgstr ""
+msgstr "這個 type 先前只能在含括 ``<frameobject.h>`` 之後獲得。"
 
 #: ../../c-api/frame.rst:34
 msgid "Return non-zero if *obj* is a frame object."
-msgstr ""
+msgstr "如 *obj* 為 frame 物件，則回傳非 0 值。"
 
 #: ../../c-api/frame.rst:38
 msgid ""
 "Previously, this function was only available after including ``<frameobject."
 "h>``."
-msgstr ""
+msgstr "這個含式先前只能在含括 ``<frameobject.h>`` 之後獲得。"
 
 #: ../../c-api/frame.rst:43
+#, fuzzy
 msgid "Get the *frame* next outer frame."
-msgstr ""
+msgstr "取得這個 *frame* 物件的下一個 outer frame."
 
 #: ../../c-api/frame.rst:45
+#, fuzzy
 msgid ""
 "Return a :term:`strong reference`, or ``NULL`` if *frame* has no outer frame."
-msgstr ""
+msgstr "取得這個 *frame* 物件的下一個 outer frame."
 
 #: ../../c-api/frame.rst:53
 msgid "Get the *frame*'s ``f_builtins`` attribute."
-msgstr ""
+msgstr "取得 *frame* 的 ``f_builtins`` 屬性."
 
 #: ../../c-api/frame.rst:55 ../../c-api/frame.rst:86
 msgid "Return a :term:`strong reference`. The result cannot be ``NULL``."
-msgstr ""
+msgstr "回傳一個 :term:`strong reference`. 結果不會為 ``NULL``."
 
 #: ../../c-api/frame.rst:62
 msgid "Get the *frame* code."
-msgstr ""
+msgstr "取得 *frame* 程式碼。"
 
 #: ../../c-api/frame.rst:64 ../../c-api/frame.rst:125
 msgid "Return a :term:`strong reference`."
-msgstr ""
+msgstr "回傳一個 :term:`strong reference`."
 
 #: ../../c-api/frame.rst:66
 msgid "The result (frame code) cannot be ``NULL``."
-msgstr ""
+msgstr "回傳的結果 (frame 程式碼) 不能為 ``NULL``."
 
 #: ../../c-api/frame.rst:73
 msgid ""
@@ -101,6 +107,9 @@ msgid ""
 "``NULL`` if this frame is not owned by a generator. Does not raise an "
 "exception, even if the return value is ``NULL``."
 msgstr ""
+"Get the generator, coroutine, or async generator that owns this frame, or "
+"``NULL`` if this frame is not owned by a generator. Does not raise an "
+"exception, even if the return value is ``NULL``."
 
 #: ../../c-api/frame.rst:77
 msgid "Return a :term:`strong reference`, or ``NULL``."
